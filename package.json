@@ -1,0 +1,35 @@
+{
+    "name": "ngcomponents",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./app/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://monstro13@github.com/Monstro13/demo.ng-components.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Monstro13/demo.ng-components/issues"
+    },
+    "homepage": "https://github.com/Monstro13/demo.ng-components#readme",
+    "dependencies": {
+        "angular": "^1.5.0",
+        "babel": "^6.5.2",
+        "babel-core": "^6.6.0",
+        "babel-loader": "^6.2.4",
+        "css-loader": "^0.23.1",
+        "cssnext-loader": "^1.0.1",
+        "file-loader": "^0.8.5",
+        "jade": "^1.11.0",
+        "jade-html-loader": "0.0.3",
+        "ng-cache-loader": "0.0.15",
+        "path": "^0.12.7",
+        "stylus-loader": "^1.5.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.12.14"
+    }
+}
