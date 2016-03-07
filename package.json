@@ -31,6 +31,7 @@
     "ng-cache-loader": "0.0.15",
     "npm": "^3.7.5",
     "path": "^0.12.7",
+    "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14"

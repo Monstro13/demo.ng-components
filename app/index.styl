@@ -1,0 +1,98 @@
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic')
+    
+body
+    background: #F5F5F5
+.app
+    &-wrapper
+        width: 650px
+        margin: auto
+        margin-top: 40px
+    &-title
+        text-align: center
+        font-size: 55px
+        color: #EAD7D7
+        margin-bottom: 20px
+.content
+    &-adder
+        input
+            width: 610px
+            height: 20px
+            font-size: 25px
+            color: #D6D6D6
+            padding: 20px
+            outline: none
+            border: none
+            &::-webkit-input-placeholder
+                color: #D6D6D6
+            &::-moz-placeholder
+                color: #D6D6D6
+            &:-moz-placeholder
+                color: #D6D6D6
+            &:-ms-input-placeholder
+                color: #D6D6D6
+.list
+    &-wrapper
+        ul
+            list-style: none
+            margin-top: 1px
+            padding: 0
+    &-item
+        padding: 5px 0px 5px 10px
+        color: #D6D6D6
+        background: white
+        margin-bottom: 1px
+        &.done
+            .list-item-text
+                text-decoration: line-through
+            .__to-success
+                color: #ABE4DA
+                border: 1px solid #ABE4DA
+        .inside
+            display: inline-block
+            margin-right: 20px
+        &-state
+            display: inline-block
+            margin-right: 20px
+            border: 1px solid #F1F1F1
+            height: 26px
+            border-radius: 26px
+            width: 26px
+            padding: 3px
+            text-align: center
+            line-height: 27px
+            cursor: pointer
+            &.__to-success
+                float: left
+            &.__to-delete
+                float: right
+            &:hover 
+                color: #ABE4DA
+                border: 1px solid #ABE4DA
+        &-text
+            font-size: 20px
+            padding: 5px
+.footer
+    &-wrapper
+        margin-top: -13px
+        padding: 14px
+        background: white
+        color: #D6D6D6
+    &-item
+        display: inline-block
+        &.__filters
+            .filter-item
+                display: inline-block
+                &:not(:last-child)
+                    margin-right: 7px
+        &.__actions
+            .action-item
+                display: inline-block
+        &:nth-child(2)
+            margin-left: 120px
+        &:last-child
+            float: right
+        a
+            color: #D6D6D6
+            text-decoration: none
+            &.__active
+                text-decoration: underline

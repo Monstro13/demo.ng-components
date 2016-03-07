@@ -43,7 +43,7 @@ describe('component: todoContent', function () {
     it(`should add item trought components method 'add'`, function () {
         let beforeLength = component.todos.length;
 
-        let testText = `Test ${Math.random(Date.now())}`;
+        let testText = `Test ${Math.random()}`;
         component.text = testText;
 
         component.add();
@@ -57,7 +57,7 @@ describe('component: todoContent', function () {
     it(`should delete item trought components method 'onDelete'`, function () {
         let beforeLength = component.todos.length;
 
-        component.text = `Test ${Math.random(Date.now())}`;
+        component.text = `Test ${Math.random()}`;
         let addedItem = component.add();
 
         component.onDelete({
@@ -72,7 +72,7 @@ describe('component: todoContent', function () {
     it(`should toggle item trought components method 'onDelete'`, function () {
         let result = false;
 
-        component.text = `Test ${Math.random(Date.now())}`;
+        component.text = `Test ${Math.random()}`;
         let addedItem = component.add();
 
         if (!addedItem.done) {

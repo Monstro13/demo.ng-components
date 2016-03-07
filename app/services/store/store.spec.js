@@ -5,7 +5,7 @@ describe('service: StoreService', function () {
     let storage = {};
 
     let addItem = function (store) {
-        let id = Math.random(Date.now());
+        let id = Math.random();
         store.add({
             id: id,
             text: `Test ${id}`,

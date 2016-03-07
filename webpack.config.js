@@ -11,7 +11,7 @@ module.exports = {
     devtool: 'inline-source-map',
     watch: true,
     resolve: {
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.styl']
     },
     module: {
         loaders: [
@@ -29,7 +29,7 @@ module.exports = {
             },
             {
                 test: /\.styl$/,
-                loader: 'css!cssnext!stylus'
+                loader: 'style!css!stylus'
             },
             {
                 test: /\.(png|jpg|gif|svg|eot|ttf|woff)/,
