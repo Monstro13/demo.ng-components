@@ -1,0 +1,13 @@
+.footer-wrapper
+    .footer-item.__count-left
+        span(ng-bind="$ctrl.todos | left")
+    .footer-item.__filters
+        .filter-item
+            a(href="#" ng-click="$ctrl.filter(undefined)" ng-bind="'All'")
+        .filter-item
+            a(href="#" ng-click="$ctrl.filter(true)" ng-bind="'Completed'")
+        .filter-item
+            a(href="#" ng-click="$ctrl.filter(false)" ng-bind="'Active'")
+    .footer-item.__actions
+        .action-item
+            a(href="#" ng-click="$ctrl.onClearChecked()" ng-bind="'Clear completed'")

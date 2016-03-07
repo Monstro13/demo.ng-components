@@ -1,0 +1,5 @@
+.content-wrapper
+    .content-adder
+        input(type='text' placeholder='What needs to be done?' ng-model="$ctrl.text" ng-enter="$ctrl.add()")
+    todo-list.content-list(todos="$ctrl.todos" on-delete="$ctrl.onDelete(todo)" on-toggle="$ctrl.onToggle(todo)")
+    todo-footer.content-footer(todos="$ctrl.todos" on-filter="$ctrl.onFilter(isDone)" on-clear-checked="$ctrl.onClearChecked()")
