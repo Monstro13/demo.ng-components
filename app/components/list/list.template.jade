@@ -1,8 +1,0 @@
-.list-wrapper
-    ul
-        li.list-item(ng-repeat="todo in $ctrl.todos track by $index" ng-class="{'done' : todo.done}")
-            .list-item-state.__to-success.inside(ng-click="$ctrl.onToggle({todo: todo})")
-                | &#10004;
-            .list-item-text.inside(ng-bind="todo.text")
-            .list-item-state.__to-delete.inside(ng-click="$ctrl.onDelete({todo: todo})")
-                | &times;
